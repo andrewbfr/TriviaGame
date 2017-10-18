@@ -4,6 +4,11 @@ body {
 	width: 100%;
 	background-color: powderblue;
 }
+
+.header {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
 #BG {
 	position: relative;
 
