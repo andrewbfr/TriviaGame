@@ -1,0 +1,10 @@
+body {
+	background-size:100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-color: powderblue;
+}
+
+#background{
+	z-index: -99;
+}
