@@ -4,7 +4,11 @@ body {
 	width: 100%;
 	background-color: powderblue;
 }
+#BG {
+	position: relative;
 
+}
 #background{
-	z-index: -99;
+	position: absolute;
+	top: 0;
 }
