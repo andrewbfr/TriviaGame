@@ -2,11 +2,18 @@
 
 //PSEUDO CODING ARHHDS-------------
 // A start button that loads the trivia question object (with answers included in it)
-//
+// Start button also has to start the timer that delivers some amount of 
+//milliseconds to finish guessing all of the questions
+// "hard" or "advanced" game offers new pages for each question and starts a 
+// new time with each page/question load
 // questions are created in new divs, etc upon the click of "start" button.
 
 // so, in this way, the hard coding isn't in the HTML file but rather, in JS. 
 // this is a little more interesting..
+// need to find a way to keep track of which answers are "correct" and which
+// are "wrong", the data-attribute covered in class might be a useful option
+// some class designation, data attribute or something that isn't directly
+// on the visual presentation (even if it's visible in the console).
 
 //DOM Manipulation
 
