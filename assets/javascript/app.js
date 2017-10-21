@@ -63,6 +63,10 @@
  //  alert("You have chosen "+$(this).text().trim()+" "+ $(this).val()+ " " + $(this).attr('value'));
 	// }
 
+
+
+	// add a modal box later
+
 //so difficult to start
 //---------------------------------
 //Variables
@@ -78,21 +82,39 @@ var unAnswered = 0;
 //---------------------------------
 //Functions
 
+
+//put on click on the global scale, use it to call the answer logging function
+$('label').click(function() {
+		console.log("heh");
+
+	answerLogging();
+});
+
+	var num = null;
+	$(".btn-group > label").on("click", function(){
+    num = +this.innerHTML;
+    alert("Value is " + num);
+});
+	// if (button has value of "cheese") push a 1 to correctAnswers
 function answerLogging(){
 
-	$('input').click(function() {
-	// if (button has value of "cheese") push a 1 to correctAnswers
-	if (this.val() === 'cheese') {
-		correctAnswers = correctAnswers + 1;
-	}
+	console.log("heh");
+	var values = [];
+
+	$('input[type="radio"]:checked').each(function(i,v){ 
+		values.push($(v).val()); 
+	});
+	// if (this.val() === 'cheese') {
+	// 	correctAnswers = correctAnswers + 1;
+	// }
 
 
-	// else (button has value of "jest") push a 1 to wrongAnswers
+	// // else (button has value of "jest") push a 1 to wrongAnswers
 
-		else {
-			wrongAnswers = wrongAnswers + 1;
-		}
-});
+	// 	else {
+	// 		wrongAnswers = wrongAnswers + 1;
+	// 	}
+
 
 };
 
