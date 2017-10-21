@@ -36,7 +36,8 @@
 // are "wrong", the data-attribute covered in class might be a useful option
 
 // some class designation, data attribute or something that isn't directly
-// on the visual presentation (even if it's visible in the console).
+// on the visual presentation (even if it's visible in the console). I know this will 
+// provide answers to someone who looks at the Sources in an Inspector/Debugger
 
 //an on click event listener, where if button with correct answer 
 //class is pressed then add a tally, and else tally the incorrect 
@@ -52,6 +53,7 @@
 // "start" button will add or clear the hidden/visible attribute given to the question and answer divs
 // "done" button will add or clear the same attribute, such that the questions are no longer visible and the answer tally now is
 // "replay" button will again add or clear the attribute to the tally page and open visibility to the question divs
+
 //DOM Manipulation
 
 //---------------------------------
