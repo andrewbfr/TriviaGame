@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TRIVIA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--Bootstrap-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -14,6 +15,7 @@
 
 <div class="container-fluid">
 	<header class="header text-center">
+		<h2>The Top is Only Halfway!</h2>
 		<h3>There's Always Time to Turn Back!</h3>
 	</header>
 	<div class="row">
@@ -28,16 +30,31 @@
 				<!-- make sure the image and text are in separate div-->
 				<div  class="col-md-10 text-center" id="background">
 
-				<h1>Radical Trivia</h1>
+				<h1>Craggy Trivia</h1>
+				<br><br><br>
+
 					<div class="jeopardy text-center">
 						The tallest mountains in the world are over 8000 meters. How many 8000 meter peaks are there?
+						<br><br>
 						<div class="answer text-center">
-							<div class="btn-group" role="group" aria-label="atl">
+							<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+								<label class="btn btn-info">
+						    		<input type="radio" name="options" id="option2" autocomplete="off" value="jest"> Eight
+								</label>
+								<label class="btn btn-info">
+						    		<input type="radio" name="options" id="option2" autocomplete="off" value="jest"> Seventy
+								</label>
+								<label class="btn btn-info">
+						    		<input type="radio" name="options" id="option2" autocomplete="off" value="jest"> Thirty-Two
+								</label>
+								<label class="btn btn-info">
+						    		<input type="radio" name="options" id="option2" autocomplete="off" value="cheese"> Fourteen
+								</label>
 							
-								<button type="button" class="btn btn-info" value="jest">Eight</button>
+								<!-- <button type="button" class="btn btn-info" value="jest"><input type="radio" autocomplete="off">Eight</button>
 								<button type="button" class="btn btn-info" value="jest">Seventy</button>
 								<button type="button" class="btn btn-info" value="jest">Thirty-Two</button>
-								<button type="button" class="btn btn-info" value="cheese">Fourteen</button>
+								<button type="button" class="btn btn-info" value="cheese">Fourteen</button> -->
 								
 							</div>
 						</div>
@@ -50,6 +67,8 @@
 
 					<div class="jeopardy text-center">
 						Which of the 8000 meter peaks was the first to be ascended by people?
+						<br>
+						<br>
 						<div class="answer text-center">
 							<div class="btn-group" role="group" aria-label="atl">
 							
@@ -69,6 +88,8 @@
 
 					<div class="jeopardy text-center">
 						What phrase is used to describe the difference between mountain peaks and their surroundings?
+						<br>
+						<br>
 						<div class="answer text-center">
 							<div class="btn-group" role="group" aria-label="atl">
 							
@@ -89,6 +110,8 @@
 
 					<div class="jeopardy text-center">
 						What is the tallest mountain in the lower 48 states of the U.S.A.?
+						<br>
+						<br>
 						<div class="answer text-center">
 							<div class="btn-group" role="group" aria-label="atl">
 							
@@ -110,6 +133,8 @@
 
 					<div class="jeopardy text-center">
 						What is the tallest mountian on the African continent?
+						<br>
+						<br>
 						<div class="answer text-center">
 							<div class="btn-group" role="group" aria-label="atl">
 							
@@ -130,6 +155,8 @@
 
 					<div class="jeopardy text-center">
 						Which of these 8000 meter peaks is on the North American continent?
+						<br>
+						<br>
 						<div class="answer text-center">
 							<div class="btn-group" role="group" aria-label="atl">
 							
@@ -149,6 +176,8 @@
 
 					<div class="jeopardy text-center">
 						Who was the first person to climb all of the 8000 meter peaks?
+						<br>
+						<br>
 						<div class="answer text-center">
 							<div class="btn-group" role="group" aria-label="atl">
 							
@@ -170,6 +199,8 @@
 
 					<div class="jeopardy text-center">
 						What is the tallest known mountain on Mars?
+						<br>
+						<br>
 						<div class="answer text-center">
 							<div class="btn-group" role="group" aria-label="atl">
 							
@@ -236,8 +267,10 @@
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
+  <!-- bootstrap JS, mostly for buttons-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- js game file -->
-  <script type="./assets/javascript/app.js"></script>
+  <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 </html>

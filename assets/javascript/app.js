@@ -22,6 +22,9 @@
 // Start button also has to start the timer that delivers some amount of 
 //milliseconds to finish guessing all of the questions
 
+// Should the Start button load a "new .html page?" Such that, there is an index.html
+// and a quesiton.html that is retrieved?
+
 // "hard" or "advanced" game offers new pages for each question and starts a 
 // new time with each page/question load
 
@@ -53,15 +56,21 @@
 // "start" button will add or clear the hidden/visible attribute given to the question and answer divs
 // "done" button will add or clear the same attribute, such that the questions are no longer visible and the answer tally now is
 // "replay" button will again add or clear the attribute to the tally page and open visibility to the question divs
-
+// correctAnsers.length and same for wrong will deliver the number of correct answers to display in the final tally
+// 
 //DOM Manipulation
 
+ //  alert("You have chosen "+$(this).text().trim()+" "+ $(this).val()+ " " + $(this).attr('value'));
+	// }
+
+//so difficult to start
 //---------------------------------
 //Variables
+console.log("Hi I'm here");
 
-var correctAnswers;
-var wrongAnswers;
-var unAnswered;
+var correctAnswers = [];
+var wrongAnswers = [];
+var unAnswered = [];
 
 
 
@@ -69,6 +78,27 @@ var unAnswered;
 //---------------------------------
 //Functions
 
+function answerLogging(){
+
+	$('input').click(function() {
+	// if (button has value of "cheese") push a 1 to correctAnswers
+	if (this.val() === 'cheese') {
+		correctAnswers.push('1');
+	}
+
+
+	// else (button has value of "jest") push a 1 to wrongAnswers
+
+		else {
+			wrongAnswers.push('1');
+		}
+});
+
+};
+
+console.log(correctAnswers);
+
+console.log(wrongAnswers);
 
 
 
