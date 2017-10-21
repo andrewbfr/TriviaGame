@@ -68,9 +68,9 @@
 //Variables
 console.log("Hi I'm here");
 
-var correctAnswers = [];
-var wrongAnswers = [];
-var unAnswered = [];
+var correctAnswers = 0;
+var wrongAnswers = 0;
+var unAnswered = 0;
 
 
 
@@ -83,14 +83,14 @@ function answerLogging(){
 	$('input').click(function() {
 	// if (button has value of "cheese") push a 1 to correctAnswers
 	if (this.val() === 'cheese') {
-		correctAnswers.push('1');
+		correctAnswers = correctAnswers + 1;
 	}
 
 
 	// else (button has value of "jest") push a 1 to wrongAnswers
 
 		else {
-			wrongAnswers.push('1');
+			wrongAnswers = wrongAnswers + 1;
 		}
 });
 
@@ -99,6 +99,8 @@ function answerLogging(){
 console.log(correctAnswers);
 
 console.log(wrongAnswers);
+
+console.log(unAnswered);
 
 
 
