@@ -273,21 +273,6 @@ function answerLogging(){
 
 
 
-	// decrement timer
-
-
-	// var number = 90;
-
-    //  Variable that will hold our interval ID when we execute
-    //  the "run" function
-    // var intervalId;
-
-    //  When the stop button gets clicked, run the stop function.
-    
-
-    //  When the resume button gets clicked, execute the run function.
-    // $("#start").on("click", run);
-
     //  The run function sets an interval
     //  that runs the decrement function once a second.
     function run() {
