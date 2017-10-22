@@ -83,23 +83,148 @@ var unAnswered = 0;
 //Functions
 
 
-//put on click on the global scale, use it to call the answer logging function
+//put on.click on the global scale, use it to call the answer logging function
 
 $('label').click(function() {
-		console.log("heh");
 
 });
 
 //try to collect the "value" or the status of the radio buttons with jquery and push them into some variable that can be recalled and checked against with the "done" button when it is clicked.
+//this value thing isn't working
 
-	// if (button has value of "cheese") push a 1 to correctAnswers
+//look at this if/else with nested if/else
+
 function answerLogging(){
+	//question one
+	var firstAnswer = $("#q1 .btn.active").text().trim();
+	console.log(firstAnswer);
+	if (firstAnswer){
+		if (firstAnswer === "Fourteen"){
+			correctAnswers++;
+		console.log(correctAnswers);
+		} else {
+			wrongAnswers++;
+		console.log(wrongAnswers);
 
-	console.log("heh");
-	var popcornAnswer = $(".answer .btn.active").text().trim();
+		}
+	} else{
+		unAnswered++;
+		console.log(unAnswered);
+	};
+	//question 2
+	var secondAnswer = $("#q2 .btn.active").text().trim();
+	console.log(secondAnswer);
+	if (secondAnswer){
+		if (secondAnswer === "Annapurna"){
+			correctAnswers++;
+		console.log(correctAnswers);
+		} else {
+			wrongAnswers++;
+		console.log(wrongAnswers);
 
-	console.log(popcornAnswer);
-	
+		}
+	} else{
+		unAnswered++;
+		console.log(unAnswered);
+	};
+	//question 3
+	var thirdAnswer = $("#q3 .btn.active").text().trim();
+	console.log(thirdAnswer);
+	if (thirdAnswer){
+		if (thirdAnswer === "Prominence"){
+			correctAnswers++;
+		console.log(correctAnswers);
+		} else {
+			wrongAnswers++;
+		console.log(wrongAnswers);
+
+		}
+	} else{
+		unAnswered++;
+		console.log(unAnswered);
+	};
+	//question 4
+	var fourthAnswer = $("#q4 .btn.active").text().trim();
+	console.log(fourthAnswer);
+	if (fourthAnswer){
+		if (fourthAnswer === "Mt. Whitney"){
+			correctAnswers++;
+		console.log(correctAnswers);
+		} else {
+			wrongAnswers++;
+		console.log(wrongAnswers);
+
+		}
+	} else{
+		unAnswered++;
+		console.log(unAnswered);
+	};
+	//question 5
+	var fifthAnswer = $("#q5 .btn.active").text().trim();
+	console.log(fifthAnswer);
+	if (fifthAnswer){
+		if (fifthAnswer === "Kilimanjaro"){
+			correctAnswers++;
+		console.log(correctAnswers);
+		} else {
+			wrongAnswers++;
+		console.log(wrongAnswers);
+
+		}
+	} else{
+		unAnswered++;
+		console.log(unAnswered);
+	};
+	//question 6
+	var sixthAnswer = $("#q6 .btn.active").text().trim();
+	console.log(sixthAnswer);
+	if (sixthAnswer){
+		if (sixthAnswer === "None"){
+			correctAnswers++;
+		console.log(correctAnswers);
+		} else {
+			wrongAnswers++;
+		console.log(wrongAnswers);
+
+		}
+	} else{
+		unAnswered++;
+		console.log(unAnswered);
+	};
+	//question 7
+	var seventhAnswer = $("#q7 .btn.active").text().trim();
+	console.log(seventhAnswer);
+	if (seventhAnswer){
+		if (seventhAnswer === "Reinhold Messner"){
+			correctAnswers++;
+		console.log(correctAnswers);
+		} else {
+			wrongAnswers++;
+		console.log(wrongAnswers);
+
+		}
+	} else{
+		unAnswered++;
+		console.log(unAnswered);
+	};
+	//question 8
+	var eighthAnswer = $("#q8 .btn.active").text().trim();
+	console.log(eighthAnswer);
+	if (eighthAnswer){
+		if (eighthAnswer === "Olympus Mons"){
+			correctAnswers++;
+		console.log(correctAnswers);
+		} else {
+			wrongAnswers++;
+		console.log(wrongAnswers);
+
+		}
+	} else{
+		unAnswered++;
+		console.log(unAnswered);
+	};
+	//end of answerLogging()
+	};
 
 
 	// $('input[type="radio"]:checked').each(function(i,v){ 
@@ -118,13 +243,6 @@ function answerLogging(){
 	// 	}
 
 
-};
-
-console.log(correctAnswers);
-
-console.log(wrongAnswers);
-
-console.log(unAnswered);
 
 
 
