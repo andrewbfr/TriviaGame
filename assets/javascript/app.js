@@ -85,15 +85,11 @@ var unAnswered = 0;
 
 //put on.click on the global scale, use it to call the answer logging function
 
-$('label').click(function() {
-
-});
-
 //try to collect the "value" or the status of the radio buttons with jquery and push them into some variable that can be recalled and checked against with the "done" button when it is clicked.
 //this value thing isn't working
 
 //look at this if/else with nested if/else
-
+// research ways to abstract this further 
 function answerLogging(){
 	//question one
 	var firstAnswer = $("#q1 .btn.active").text().trim();
@@ -223,7 +219,11 @@ function answerLogging(){
 		unAnswered++;
 		console.log(unAnswered);
 	};
+	alert("Unanswered= " + unAnswered + " Correct Answers= " + correctAnswers + " Wrong Answers= " + wrongAnswers);
 	//end of answerLogging()
+	unAnswered = 0;
+	correctAnswers = 0;
+	wrongAnswers = 0;
 	};
 
 
