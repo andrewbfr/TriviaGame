@@ -249,7 +249,9 @@ function answerLogging(){
 
 	function countDown(){
 		$(".for-hiding").removeAttr('hidden');
-		$("#start").attr("hidden","true");
+
+		$(".start-btn").attr("hidden","true");
+		
 
 	};
 
