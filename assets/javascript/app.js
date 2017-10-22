@@ -81,16 +81,16 @@ var unAnswered = 0;
 
 //---------------------------------
 //Functions
+document.getElementById('donzo').onclick = function(){
+      answerLogging();
+}
 
-
-//put on.click on the global scale, use it to call the answer logging function
-
-//try to collect the "value" or the status of the radio buttons with jquery and push them into some variable that can be recalled and checked against with the "done" button when it is clicked.
-//this value thing isn't working
 
 //look at this if/else with nested if/else
 // research ways to abstract this further 
 function answerLogging(){
+	//question correct/incorrect parameters
+
 	//question one
 	var firstAnswer = $("#q1 .btn.active").text().trim();
 	console.log(firstAnswer);
@@ -103,6 +103,7 @@ function answerLogging(){
 		console.log(wrongAnswers);
 
 		}
+		// unanswered
 	} else{
 		unAnswered++;
 		console.log(unAnswered);
@@ -220,27 +221,17 @@ function answerLogging(){
 		console.log(unAnswered);
 	};
 	alert("Unanswered= " + unAnswered + " Correct Answers= " + correctAnswers + " Wrong Answers= " + wrongAnswers);
-	//end of answerLogging()
+
+	
+	//reset variable values so if "done" is clicked again, it will start anew instead of adding values together.
 	unAnswered = 0;
 	correctAnswers = 0;
 	wrongAnswers = 0;
+	//end of answerLogging()
 	};
 
 
-	// $('input[type="radio"]:checked').each(function(i,v){ 
-	// 	values.push($(v).val()); 
-	// });
-
-	// if (this.val() === 'cheese') {
-	// 	correctAnswers = correctAnswers + 1;
-	// }
-
-
-	// // else (button has value of "jest") push a 1 to wrongAnswers
-
-	// 	else {
-	// 		wrongAnswers = wrongAnswers + 1;
-	// 	}
+	
 
 
 
