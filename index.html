@@ -33,13 +33,14 @@
 				<h1>Craggy Trivia</h1>
 				<br><br><br>
 
+
 				<!-- html validator is unhappy with "autocomplete" attribute attached to this particular input-->
 
 					<div class="jeopardy text-center">
 						The tallest mountains in the world are over 8000 meters. How many 8000 meter peaks are there?
 						<br><br>
 						<div class="answer text-center">
-							<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+							<div class="btn-group" id="q1" role="group" aria-label="atl" data-toggle="buttons">
 								<label class="btn btn-info">
 						    		<input type="radio" autocomplete="off" value="jest"> Eight
 								</label>
@@ -67,7 +68,7 @@
 						<br>
 						<br>
 						<div class="answer text-center">
-							<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+							<div class="btn-group" id="q2" role="group" aria-label="atl" data-toggle="buttons">
 								<label class="btn btn-info">
 						    		<input type="radio" autocomplete="off" value="jest"> Cho Oyu
 								</label>
@@ -95,7 +96,7 @@
 						<br>
 						<br>
 						<div class="answer text-center">
-							<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+							<div class="btn-group" id="3" role="group" aria-label="atl" data-toggle="buttons">
 								<label class="btn btn-info">
 						    		<input type="radio" autocomplete="off" value="cheese"> Prominence
 								</label>
@@ -123,8 +124,8 @@
 						What is the tallest mountain in the lower 48 states of the U.S.A.?
 						<br>
 						<br>
-						<div class="answer text-center">
-							<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+						<div class="text-center">
+							<div class="btn-group" id="q4" role="group" aria-label="atl" data-toggle="buttons">
 								<label class="btn btn-info">
 						    		<input type="radio" autocomplete="off" value="jest"> Twin Peaks
 								</label>
@@ -155,7 +156,7 @@
 						<br>
 						<br>
 							<div class="answer text-center">
-								<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+								<div class="btn-group" id="q5" role="group" aria-label="atl" data-toggle="buttons">
 									<label class="btn btn-info">
 							    		<input type="radio" autocomplete="off" value="jest"> Ras Dashen
 									</label>
@@ -172,7 +173,7 @@
 								</div>
 							</div>
 					</div>
-					</div>
+				
 
 					<br>
 					<hr>
@@ -185,20 +186,19 @@
 						<br>
 						<br>
 						<div class="answer text-center">
-							<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+							<div class="btn-group" id="q6" role="group" aria-label="atl" data-toggle="buttons">
 								<label class="btn btn-info">
-						    		<input type="radio" autocomplete="off" value="jest"> Everest
-								</label>
-								<label class="btn btn-info">
-						    		<input type="radio" autocomplete="off" value="jest"> K2
-								</label>
-								<label class="btn btn-info">
-						    		<input type="radio" autocomplete="off" value="jest"> Denali
-								</label>
-								<label class="btn btn-info">
-						    		<input type="radio" autocomplete="off" value="cheese"> None
-								</label>
-								
+						    		<input type="radio" name="popcorn" autocomplete="off" value="jest"> Everest
+						    	</label>
+						    	<label class="btn btn-info">
+						    		<input type="radio" name="popcorn" autocomplete="off" value="jest"> K2
+						    	</label>
+						    	<label class="btn btn-info">
+						    		<input type="radio" name="popcorn" autocomplete="off" value="jest"> Denali
+						    	</label>
+						    	<label class="btn btn-info">
+						    		<input type="radio" name="popcorn" autocomplete="off" value="cheese"> None
+						    	</label>
 							</div>
 						</div>
 					</div>
@@ -213,7 +213,7 @@
 						<br>
 						<br>
 						<div class="answer text-center">
-							<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+							<div class="btn-group" id="q7" role="group" aria-label="atl" data-toggle="buttons">
 								<label class="btn btn-info">
 						    		<input type="radio" autocomplete="off" value="cheese"> Reinhold Messner
 								</label>
@@ -243,7 +243,7 @@
 						<br>
 						<br>
 						<div class="answer text-center">
-							<div class="btn-group" role="group" aria-label="atl" data-toggle="buttons">
+							<div class="btn-group" id="q8" role="group" aria-label="atl" data-toggle="buttons">
 								<label class="btn btn-info">
 						    		<input type="radio" autocomplete="off" value="jest"> Zeus
 								</label>
@@ -264,6 +264,10 @@
 				</div>
 
 			</div>
+		</div>
+
+		<div>
+			<button onclick="answerLogging()">DONE</button>
 		</div>
 
 		<!-- 	main closing -->

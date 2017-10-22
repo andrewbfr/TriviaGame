@@ -84,26 +84,28 @@ var unAnswered = 0;
 
 
 //put on click on the global scale, use it to call the answer logging function
+
 $('label').click(function() {
 		console.log("heh");
 
-	answerLogging();
 });
 
-	var num = null;
-	$(".btn-group > label").on("click", function(){
-    num = +this.innerHTML;
-    alert("Value is " + num);
-});
+//try to collect the "value" or the status of the radio buttons with jquery and push them into some variable that can be recalled and checked against with the "done" button when it is clicked.
+
 	// if (button has value of "cheese") push a 1 to correctAnswers
 function answerLogging(){
 
 	console.log("heh");
-	var values = [];
+	var popcornAnswer = $(".answer .btn.active").text().trim();
 
-	$('input[type="radio"]:checked').each(function(i,v){ 
-		values.push($(v).val()); 
-	});
+	console.log(popcornAnswer);
+	
+
+
+	// $('input[type="radio"]:checked').each(function(i,v){ 
+	// 	values.push($(v).val()); 
+	// });
+
 	// if (this.val() === 'cheese') {
 	// 	correctAnswers = correctAnswers + 1;
 	// }
