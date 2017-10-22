@@ -5,6 +5,17 @@
 
 /////-----------------
 
+//TO DO
+	
+	// !!!set timer!!!
+
+	//one page with displaying "start" button and some text about the game
+
+	// initiate setInterval timer, make question divs visible and hide "start" button
+
+	// modal 
+		// display answers
+		// allow reset/replay buttons
 
 
 
@@ -81,10 +92,14 @@ var unAnswered = 0;
 
 //---------------------------------
 //Functions
-document.getElementById('donzo').onclick = function(){
+document.getElementById("donzo").onclick = function(){
       answerLogging();
 }
 
+//jeopardy class hides before start and on done
+document.getElementById("start").onclick = function(){
+	countDown();
+};
 
 //look at this if/else with nested if/else
 // research ways to abstract this further 
@@ -227,9 +242,16 @@ function answerLogging(){
 	unAnswered = 0;
 	correctAnswers = 0;
 	wrongAnswers = 0;
+
 	//end of answerLogging()
+
 	};
 
+	function countDown(){
+		$(".for-hiding").removeAttr('hidden');
+		$("#start").attr("hidden","true");
+
+	};
 
 	
 

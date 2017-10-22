@@ -1,19 +1,18 @@
-body {
-	background-size:100%;
-	background-repeat: no-repeat;
-	width: 100%;
-	background-color: #5bc0de;
-}
 
+.container-fluid {
+	background-color: #60c0dd;
+	border-bottom: 2px solid #777;
+	margin-bottom: 2%;
+}
+#main {
+	background-image: "/assets/images/ps-bg.png";
+	/* why is relative paths so hard?*/
+}
 .header {
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
-/*#BG {
-	position: relative;
 
+#jeopardy {
+	visibility: hidden;
 }
-#background{
-	position: absolute;
-	top: 0;
-}*/

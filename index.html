@@ -20,22 +20,32 @@
 	</header>
 </div>
 
+<div class="container" id="main">
 	<div class="row">
 	<!-- ok the things aren't quite lining up to center when responsive design is considered so think about fixing that. probably an issue with the absolute and relative positioning, maybe img-responsive class something-->
 
 	<!-- also find a better image that can repeat, or something, when it shrinks to mobile size it looks bad (too small)
 	Or just make it a solid color, that would be fine.s-->
 	
-		<div class="col-md-10 col-md-offset-1">
-			
+		<div class="col-md-10 col-md-offset-1 start-hid">
+				
+				<div class="text-center start-btn">
+					<button class="btn btn-danger text-center" id="start">START</button>
+				</div>
 				<!-- make sure the image and text are in separate div-->
-				<div  class="col-md-10 text-center" id="background">
+				<div class="text-center">
 
 				<h1>Craggy Trivia</h1>
-				<br><br><br>
+				<br>
+
+				<div class="for-hiding" hidden="true">
+
+				<h1 id="timer">00:00</h1>
+				<br><br>
 
 
 				<!-- html validator is unhappy with "autocomplete" attribute attached to this particular input-->
+				
 
 					<div class="jeopardy text-center">
 						The tallest mountains in the world are over 8000 meters. How many 8000 meter peaks are there?
@@ -262,65 +272,35 @@
 						</div>
 					</div>
 
+					</div> <!-- for-hiding closing -->
+
 
 				<!-- craggy trivia div closing -->
 				</div>
 
 			</div>
-			
+
 			<!-- div, first class of row closing-->
 		</div>
 
 <br><br>
 
-		<div class="row">
-			<button class="col-md-1 col-md-offset-6 btn btn-danger" id="donzo">DONE</button>
-		</div>
+		
 
 		<!-- 	main closing -->
 </div>
+<br><br>
+	<div class="for-hiding" hidden="true">
+		<div class="jeopardy container">
+			<div class="row">
+				<div class="text-center">
+					<button class="btn btn-danger text-center" id="donzo">DONE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+		<br><br>
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	<!--jquery-->
 	<script
