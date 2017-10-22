@@ -73,11 +73,16 @@ var correctAnswers = 0;
 var wrongAnswers = 0;
 var unAnswered = 0;
 
+//timer variables
+var number = 90;
+
+var intervalId;
 
 
 
-//---------------------------------
-//Functions
+
+
+//----- Main Processes
 document.getElementById("donzo").onclick = function(){
       answerLogging();
 }
@@ -87,9 +92,20 @@ document.getElementById("start").onclick = function(){
 	countDown();
 };
 
+
+
+//---------------------------------
+//Functions
 //look at this if/else with nested if/else
 // research ways to abstract this further 
 function answerLogging(){
+
+
+	//timer
+
+	stop();
+
+	// 
 	//question correct/incorrect parameters
 
 	//question one
@@ -235,21 +251,81 @@ function answerLogging(){
 
 	// reset timer
 
-	$("#timer").text("00:00");
+	$("#timer").text("00");
 
 	//end of answerLogging()
 
 	};
 
 
+// function called on "start" click
 	function countDown(){
 		$(".for-hiding").removeAttr('hidden');
 
 		$(".start-btn").attr("hidden","true");
 
-		$("#timer").text("01:30");
+		$("#timer").text("90");
 
-	};
+		run();
+
+	
+ };
+
+
+
+	// decrement timer
+
+
+	// var number = 90;
+
+    //  Variable that will hold our interval ID when we execute
+    //  the "run" function
+    // var intervalId;
+
+    //  When the stop button gets clicked, run the stop function.
+    
+
+    //  When the resume button gets clicked, execute the run function.
+    // $("#start").on("click", run);
+
+    //  The run function sets an interval
+    //  that runs the decrement function once a second.
+    function run() {
+      intervalId = setInterval(decrement, 1000);
+    }
+
+    //  The decrement function.
+    function decrement() {
+
+      //  Decrease number by one.
+      number--;
+
+      //  Show the number in the #show-number tag.
+      $("#timer").html("<h1>" + number + "</h1>");
+
+
+      //  Once number hits zero...
+      if (number === 0) {
+
+        //  ...run the stop function.
+        stop();
+
+        answerLogging();
+
+      }
+    }
+
+    //  The stop function
+    function stop() {
+
+      //  Clears our intervalId
+      //  We just pass the name of the interval
+      //  to the clearInterval function.
+      clearInterval(intervalId);
+    }
+
+
+   
 
 	
 
