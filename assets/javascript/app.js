@@ -272,7 +272,6 @@ function answerLogging(){
  };
 
 
-
     //  The run function sets an interval
     //  that runs the decrement function once a second.
     function run() {
