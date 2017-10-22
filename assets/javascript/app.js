@@ -33,11 +33,6 @@
 // Start button also has to start the timer that delivers some amount of 
 //milliseconds to finish guessing all of the questions
 
-// Should the Start button load a "new .html page?" Such that, there is an index.html
-// and a quesiton.html that is retrieved?
-
-// "hard" or "advanced" game offers new pages for each question and starts a 
-// new time with each page/question load
 
 // questions are created in new divs, etc upon the click of "start" button.
 // new divs for questions may not be necessary, can practice creating multiple
@@ -69,16 +64,7 @@
 // "replay" button will again add or clear the attribute to the tally page and open visibility to the question divs
 // correctAnsers.length and same for wrong will deliver the number of correct answers to display in the final tally
 // 
-//DOM Manipulation
 
- //  alert("You have chosen "+$(this).text().trim()+" "+ $(this).val()+ " " + $(this).attr('value'));
-	// }
-
-
-
-	// add a modal box later
-
-//so difficult to start
 //---------------------------------
 //Variables
 console.log("Hi I'm here");
@@ -235,7 +221,11 @@ function answerLogging(){
 		unAnswered++;
 		console.log(unAnswered);
 	};
+
+	//temporary answer display
 	alert("Unanswered= " + unAnswered + " Correct Answers= " + correctAnswers + " Wrong Answers= " + wrongAnswers);
+
+
 
 	
 	//reset variable values so if "done" is clicked again, it will start anew instead of adding values together.
@@ -243,25 +233,24 @@ function answerLogging(){
 	correctAnswers = 0;
 	wrongAnswers = 0;
 
+	// reset timer
+
+	$("#timer").text("00:00");
+
 	//end of answerLogging()
 
 	};
+
 
 	function countDown(){
 		$(".for-hiding").removeAttr('hidden');
 
 		$(".start-btn").attr("hidden","true");
-		
+
+		$("#timer").text("01:30");
 
 	};
 
 	
 
 
-
-
-
-
-
-//---------------------------------
-//Main Processes
